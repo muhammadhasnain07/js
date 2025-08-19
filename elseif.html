@@ -45,20 +45,65 @@
         //     document.write("not match")
         // }
 
-        // #nested if else
-        let nationality = prompt("enter your nationality")
-        let age = prompt("enter your age")
-        if(natinality == "pakistani"){
-            if(age >=18){
-                document.write("you are eligible for vote")
+        // // #nested if else
+        // let nationality = prompt("enter your nationality")
+        // let age = prompt("enter your age")
+        // if(natinality == "pakistani"){
+        //     if(age >=18){
+        //         document.write("you are eligible for vote")
+        //     }
+        //     else{
+        //         document.write("you are note eligible for vote")
+        //     }
+        // }        
+        // else{
+        //     document.write("only allow pakistani")
+        // }
+
+
+
+    //     let name = prompt("Enter Your Name");
+    //     let email = prompt("Enter Your Email");
+    //     let password = prompt("Enter Your Password");
+    //     let confirmpassword = prompt("Confirm Your Password");
+
+    //   if (name === "Hasnain"){
+    //     if (email === "Hasnain@gmail.com"){
+    //         if (password === "hmhs"){
+    //             if (confirmpassword === "hmhs"){
+    //                 document.write("Welcome Muhammad Hasnain");
+    //             } else {
+    //                 document.write("confirm password incorrect");
+    //             }
+    //         }else {
+    //                 document.write(" password incorrect");
+    //         }
+    //     }else{
+    //         document.write("email incorrect");
+    //     }
+    //   }else{
+    //     document.write("name incorrect");
+    //   }
+
+
+
+    // miss assigment
+        let nationality = prompt("Enter Your natinality");
+        let age = prompt("Enter Your Age");
+        let religion = prompt("Enter Your Religion");
+
+        if (nationality  == "pakistani"){
+            if (age >= 18){
+                if (religion == "islam"){
+                    document.write("you are eligible to vote");
+                }else{
+                    document.write("you are note eligible to vote due to religion");
+                }
+            }else{
+                document.write("you are eligible to vote");
             }
-            else{
-                document.write("you are note eligible for vote")
-            }
-        }        
-        else{
-            document.write("only allow pakistani")
         }
+        
     </script>
 </body>
 </html>
