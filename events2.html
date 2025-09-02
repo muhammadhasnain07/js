@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <button id="hasnain">click me</button>
+        <p id="para"></p>
+
+        <script>
+            let hasnain = document.getElementById("hasnain")
+
+            // hasnain.onclick = function(){
+            //     document.getElementById("para").innerHTML = "wha kai bt hai"
+            // }
+            // hasnain.onclick =()=>document.getElementById("para").innerHTML = "wha kai bt hai"
+            // hasnain.onclick =()=>document.getElementById("para").style.color = "red";
+
+                hasnain.addEventListener("mouseover" , function(){
+                    document.getElementById("para").innerHTML = "wha kia bat hai"
+                })
+            
+    hasnain.addEventListener("mouseover" ,()=>document.getElementById("para").innerHTML = "wha kia bat hai"
+                )
+            
+
+        </script>
+
+
+</body>
+</html>
