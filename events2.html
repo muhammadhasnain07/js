@@ -9,22 +9,45 @@
         <button id="hasnain">click me</button>
         <p id="para"></p>
 
+        <a href="https://www.pakwheels.com/" id="anchor">pakwheel</a>
+
         <script>
-            let hasnain = document.getElementById("hasnain")
+            // let hasnain = document.getElementById("hasnain")
 
-            // hasnain.onclick = function(){
-            //     document.getElementById("para").innerHTML = "wha kai bt hai"
-            // }
-            // hasnain.onclick =()=>document.getElementById("para").innerHTML = "wha kai bt hai"
-            // hasnain.onclick =()=>document.getElementById("para").style.color = "red";
+            // // hasnain.onclick = function(){
+            // //     document.getElementById("para").innerHTML = "wha kai bt hai"
+            // // }
+            // // hasnain.onclick =()=>document.getElementById("para").innerHTML = "wha kai bt hai"
+            // // hasnain.onclick =()=>document.getElementById("para").style.color = "red";
 
-                hasnain.addEventListener("mouseover" , function(){
-                    document.getElementById("para").innerHTML = "wha kia bat hai"
-                })
+            //     hasnain.addEventListener("mouseover" , function(){
+            //         document.getElementById("para").innerHTML = "wha kia bat hai"
+            //     })
             
     hasnain.addEventListener("mouseover" ,()=>document.getElementById("para").innerHTML = "wha kia bat hai"
                 )
             
+
+                // window event
+                window.onload = () => {
+                    alert("hello world")
+                }
+                window.onresize =() => {
+                    console.log("window is resize")
+                }
+                window.onscroll=function(){
+                    alert("scrolling")
+                }
+                window.unbeforeunload =(e)=>{
+                    e.preventdefault()
+                    alert("window is unloaded")
+                }
+                let anchor = document.getElementById("anchor")
+                anchor.onclick = function(event){
+                    event.preventdefault();
+                    alert("link is not working")
+                }
+
 
         </script>
 
