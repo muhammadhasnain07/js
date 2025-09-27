@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <h1 id="h1">heading 1</h1>
+    <h1>heading 2</h1>
+
+    <p class="para">hasnain </p>
+    <p class="para">shamoil 2</p>
+    <p class="para">muzammil 3</p>
+
+
+
+</body>
+
+<script>
+    // let para = document.getElementsByClassName("para")
+// para[0].innerHTML = "jeeto pakistan"
+// para[1].style.color = "red"
+
+
+// let para = document.getElementsByTagName('p')
+// para[0].innerHTML = "jeeto pakistan"
+// para[1].style.color = "green"
+
+// let para = document.querySelector("*")
+// para.style.color = "blue"
+
+
+// let Array = ["HTML", "CSS", "BOOTSTRAP", "JS"];
+
+// // Array.forEach(function(data){
+// //     document.write(data, "<br>")
+// // })
+// Array.forEach(data =>{
+//     document.write(data,"<br>")
+// })
+
+
+let para = document.querySelectorAll("h1")
+para.forEach(function(value){
+    value.innerHTML = "this is query selector all"
+    value.style.color = "green"
+})
+
+</script>
+</html>

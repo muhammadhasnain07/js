@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading1">hello world!</h1>
+    
+    <form>
+        <input type="text" placeholder="enter your name" id="name">
+        <button id="btn">click me</button>
+        <p id="para"></p>
+    </form>
+
+
+    <script>
+        let btn = document.getElementById("btn")
+        let heading = document.getElementById("heading1")
+        btn.addEventListener("click", function(){
+            heading.innerHTML = "<i>hello dom</i>"
+            heading.style.color = "blue"
+        })
+
+    
+
+        // let btn = document.getElementById("btn")
+        let para = document.getElementById("para")
+
+        btn.addEventListener("click", function(e){
+            e.preventDefault()
+            let name = document.getElementById("name").value 
+            para.innerHTML = name
+        })
+    </script>
+
+
+
+
+
+</body>
+</html>
